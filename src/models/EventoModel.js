@@ -20,18 +20,18 @@ let eventos = [
 let proximoId = 3;
 
 function listarTodos() {
-    return eventos.find((evento) => evento.id === id);
+    return eventos;
 }
 
 function buscarPorId(id) {
-    return eventos.find((evento) => evendo.id === id);
+    return eventos.find((evento) => evento.id === id);
 }
 
 function criar(dados) {
     const novoEvento = {
         id: proximoId,
         nome: dados.nome,
-        desricao: dados.descricao,
+        descricao: dados.descricao,
         data: dados.data,
         local:dados.local,
         capacidade: dados.capacidade
